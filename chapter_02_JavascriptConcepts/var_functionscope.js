@@ -1,0 +1,19 @@
+var a = 10;
+console.log(a);
+
+//Definition of the function
+function printHello() {
+    console.log("Hello TestingAcademy");
+    var a = 20; //Local scope
+    console.log(a);
+    if (true) {
+        var a = 30;
+        console.log(a);
+    }
+    console.log("F ->", a);
+}
+
+console.log("G ->", a);
+
+
+printHello();
